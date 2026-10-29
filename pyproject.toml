@@ -1,0 +1,19 @@
+[project]
+name = "qwen25vl-image-to-prompt"
+version = "1.0.0"
+description = "Generate an English text-to-image prompt from an image with Qwen2.5-VL in ComfyUI."
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = [
+    "transformers>=4.51.3,<5",
+    "accelerate>=1.0",
+    "pillow",
+]
+
+[project.urls]
+Repository = "https://github.com/magichan-lab/ComfyUI-Qwen2.5-VL-Image-to-Prompt"
+
+[tool.comfy]
+# Replace with the publisher ID created at https://registry.comfy.org/.
+PublisherId = "YOUR_PUBLISHER_ID"
+DisplayName = "Qwen2.5-VL Image to Prompt"
